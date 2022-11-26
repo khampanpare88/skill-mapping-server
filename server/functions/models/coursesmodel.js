@@ -1,20 +1,20 @@
-import mongoose from 'mongoose';
+const mongoose = require("mongoose");
 
-const coursesSchema = mongoose.Schema({
-    id : String,
-    name : String,
-    des : String,
-    sel_topic : String,
-    skills : [
-        {
-        skill_id : String,
-        skill_name : String,
-        level_id : String,
-        comment : String
-        }
-    ]
+const coursesschema = mongoose.Schema({
+  id: String,
+  name: String,
+  des: String,
+  sel_topic: String,
+  skills: [
+    {
+      skill_id: String,
+      skill_name: String,
+      level_id: String,
+      comment: String,
+    },
+  ],
 });
 
-const CoursesModel = mongoose.model('CoursesModel',coursesSchema);
+const coursesModel = mongoose.model("CoursesModel", coursesschema);
 
-export default CoursesModel;
+module.exports = coursesModel;
