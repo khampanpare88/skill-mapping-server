@@ -1,6 +1,5 @@
 const mongoose = require("mongoose");
-
-const skillsSchema = mongoose.Schema({
+const skillsSchema = mongoose.schema({
   name: String,
   des: String,
   levels: [
@@ -10,6 +9,5 @@ const skillsSchema = mongoose.Schema({
     },
   ],
 }, {versionKey: false});
-
 const skillsModel = mongoose.model("SkillsModel", skillsSchema);
 module.exports = skillsModel;

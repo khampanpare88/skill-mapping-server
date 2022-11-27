@@ -1,6 +1,5 @@
 const mongoose = require("mongoose");
-
-const coursesschema = mongoose.Schema({
+const coursesschema = mongoose.schema({
   id: String,
   name: String,
   des: String,
